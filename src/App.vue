@@ -1,5 +1,11 @@
-<script></script>
+<script>
+import Header from "./components/Header.vue";
 
-<template></template>
+export default {
+  components: { Header },
+};
+</script>
 
-<style scoped></style>
+<template><Header></Header></template>
+
+<style></style>
