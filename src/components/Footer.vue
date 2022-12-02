@@ -69,6 +69,23 @@ export default {};
       </div>
     </div>
   </div>
+  <div class="footer-nav">
+    <div
+      class="container d-flex justify-content-between align-items-center py-4"
+    >
+      <button>SIGN-UP NOW</button>
+      <div class="d-flex align-content-center gap-3">
+        <h6>FOLLOW US</h6>
+        <div class="icon-container">
+          <img src="../assets/footer-facebook.png" alt="" />
+          <img src="../assets/footer-twitter.png" alt="" />
+          <img src="../assets/footer-youtube.png" alt="" />
+          <img src="../assets/footer-pinterest.png" alt="" />
+          <img src="../assets/footer-periscope.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -98,6 +115,33 @@ export default {};
     display: block;
     flex-basis: 100%;
     object-fit: contain;
+  }
+}
+.footer-nav {
+  background-color: #303030;
+  button {
+    background-color: #303030;
+    border-color: #0282f9;
+    border-style: solid;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px;
+  }
+  h6 {
+    color: #0282f9;
+    margin: 0;
+    align-self: center;
+  }
+  .icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    img {
+      display: block;
+      width: 100%;
+    }
   }
 }
 </style>
