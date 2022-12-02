@@ -33,6 +33,9 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+nav {
+  height: 80px;
+}
 .logo-container {
   width: 5%;
   padding: 8px 0;
@@ -49,12 +52,12 @@ export default {
   a {
     text-decoration: none;
     color: black;
-    padding: 32px 0;
     font-size: 12px;
+    padding: 26px 0;
     font-weight: 600;
     &:hover {
-      color: blue;
-      border-bottom: 4px solid blue;
+      color: #0282f9;
+      border-bottom: 4px solid #0282f9;
     }
   }
 }
