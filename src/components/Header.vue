@@ -1,16 +1,18 @@
 <template>
-  <div class="container">
-    <nav class="d-flex justify-content-between align-items-center w-100">
-      <div class="logo-container">
-        <img src="../assets/dc-logo.png" alt="" class="d-block" />
-      </div>
-      <ul class="link-list d-flex">
-        <li v-for="link in navArray">
-          <a href="#">{{ link }}</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <header>
+    <div class="container">
+      <nav class="d-flex justify-content-between align-items-center w-100">
+        <div class="logo-container">
+          <img src="../assets/dc-logo.png" alt="" class="d-block" />
+        </div>
+        <ul class="link-list d-flex">
+          <li v-for="link in navArray">
+            <a href="#">{{ link }}</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 </template>
 <script>
 export default {
@@ -33,6 +35,15 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  background-color: white;
+  z-index: 10;
+}
 nav {
   height: 80px;
 }
