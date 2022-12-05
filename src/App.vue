@@ -11,7 +11,8 @@ export default {
 <template>
   <Header></Header>
   <div class="fluid-container"></div>
-  <ComicsItem></ComicsItem><Merch></Merch><Footer></Footer>
+  <ComicsItem></ComicsItem>
+  <Merch></Merch><Footer></Footer>
 </template>
 
 <style scoped lang="scss">
