@@ -1,16 +1,23 @@
 <script>
 import Header from "./components/Header.vue";
-import ContentContainer from "./components/ContentContainer.vue";
+import ComicsItem from "./components/ComicsItem.vue";
 import Merch from "./components/MerchComponent.vue";
 import Footer from "./components/Footer.vue";
 export default {
-  components: { Header, ContentContainer, Merch, Footer },
+  components: { Header, ComicsItem, Merch, Footer },
 };
 </script>
 
 <template>
-  <Header></Header><ContentContainer></ContentContainer><Merch></Merch
-  ><Footer></Footer>
+  <Header></Header>
+  <div class="fluid-container"></div>
+  <ComicsItem></ComicsItem><Merch></Merch><Footer></Footer>
 </template>
 
-<style></style>
+<style scoped lang="scss">
+.fluid-container {
+  height: 400px;
+  background-image: url(../src/assets/jumbotron.jpg);
+  background-size: cover;
+}
+</style>
